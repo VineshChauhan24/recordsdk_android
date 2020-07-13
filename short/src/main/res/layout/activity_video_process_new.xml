@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_video_process"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/short_color_27">
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/video_process_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true" />
+
+    <RelativeLayout
+        android:id="@+id/rl_tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white">
+
+        <include
+            layout="@layout/video_process_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/rl_tab"
+        android:layout_below="@id/title"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_player"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="20dp"
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:id="@+id/rl_player_root"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true">
+
+                <fragment
+                    android:id="@+id/fm_player"
+                    android:name="com.qukan.qkrecordupload.fileCut.processFragment.PlayerFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_lock_top"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginBottom="250dp"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_video_list"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:background="@color/short_color_14">
+
+            <fragment
+                android:id="@+id/fm_video_list"
+                android:name="com.qukan.qkrecordupload.fileCut.processFragment.VideoListFragment"
+                android:layout_width="match_parent"
+                android:layout_height="66dp"
+                android:layout_gravity="center"
+                tools:layout="@layout/fragment_video_list" />
+        </FrameLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_control"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:background="@color/short_color_14"
+            android:gravity="center_vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_model"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="字幕"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_do"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:padding="8dp"
+                android:text="确定"
+                android:textColor="@color/short_color_4786"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_alignParentBottom="true"
+                android:background="#303133" />
+        </RelativeLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_video_seekbar"
+            android:layout_width="match_parent"
+            android:layout_height="63dp"
+            android:visibility="gone">
+
+            <fragment
+                android:id="@+id/fm_video_seekbar"
+                android:name="com.qukan.qkrecordupload.fileCut.processFragment.SeekVideoFragment"
+                android:layout_width="match_parent"
+                android:layout_height="63dp"
+                tools:layout="@layout/fragment_seek_video" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_cg"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:visibility="gone">
+
+            <fragment
+                android:id="@+id/fm_subtitle"
+                android:name="com.qukan.qkrecordupload.fileCut.processFragment.CGFragment"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                tools:layout="@layout/fragment_subtitle" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_music"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:visibility="gone">
+
+            <fragment
+
+                android:id="@+id/fm_music"
+                android:name="com.qukan.qkrecordupload.fileCut.processFragment.MusicFragment"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                tools:layout="@layout/fragment_music" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_color"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:visibility="gone">
+
+            <fragment
+
+                android:id="@+id/fm_color"
+                android:name="com.qukan.qkrecordupload.fileCut.processFragment.ColorFragment"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                tools:layout="@layout/fragment_color_new" />
+        </FrameLayout>
+
+
+        <FrameLayout
+            android:id="@+id/fl_crop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <fragment
+                android:id="@+id/fm_crop"
+                android:name="com.qukan.qkrecordupload.fileCut.processFragment.CropFragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:layout="@layout/fragment_crop" />
+        </FrameLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_transform"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:visibility="gone">
+
+            <fragment
+                android:id="@+id/fm_transfer_edit"
+                android:name="com.qukan.qkrecordupload.fileCut.processFragment.TransferEditFragment"
+                android:layout_width="match_parent"
+                android:layout_height="240dp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:visibility="gone">
+
+        <fragment
+            android:id="@+id/fm_subtitle_edit"
+            android:name="com.qukan.qkrecordupload.fileCut.processFragment.CGEditFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout="@layout/fragment_subtitle_edit" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:visibility="gone">
+
+        <fragment
+            android:id="@+id/fm_subtitle_imgedit"
+            android:name="com.qukan.qkrecordupload.fileCut.processFragment.CGImageFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout="@layout/fragment_subtitle_edit" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_lock_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="95dp"
+        android:layout_alignParentBottom="true"
+        android:visibility="invisible" />
+
+
+</RelativeLayout>

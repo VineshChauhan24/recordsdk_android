@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_lv_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="#D3D3D3"
+    android:paddingRight="4dp"
+    >
+        <ImageView
+            android:id="@+id/img_list_item"
+            android:scaleType="fitXY"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:src="@mipmap/ic_launcher"/>
+        <ImageView
+            android:id="@+id/img_delete_video"
+            android:scaleType="fitXY"
+            android:layout_marginLeft="56dp"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+         />
+
+</RelativeLayout>

@@ -1,0 +1,107 @@
+<resources>
+    <string name="app_name">qkrecordupload</string>
+    <!-- 设置 -->
+    <string name="sure">确定</string>
+    <string name="resolution_smooth">普清</string>
+    <string name="resolution_smooth2">普清 37KB/s</string>
+    <string name="resolution_biaoqing">标清</string>
+    <string name="resolution_biaoqing2">标清 75KB/s</string>
+    <string name="resolution_gaoqing">高清</string>
+    <string name="resolution_gaoqing2">高清 125KB/s</string>
+    <string name="resolution">视频质量</string>
+    <string name="record_list">直播文件</string>
+    <string name="record_setting">本地录像</string>
+    <string name="record_sd_setting">存储卡设置</string>
+    <string name="resolution_setting">分辨率设置</string>
+    <string name="sd_card">存储卡</string>
+    <string name="sd_storage">容量:</string>
+    <string name="edit">编辑</string>
+    <string name="select_all">全选</string>
+    <string name="delete">删除</string>
+    <string name="sure_delete">确定需要删除吗？</string>
+
+    // 颜色
+
+    <string name="cg_black">#000000</string>
+    <string name="cg_white">#ffffff</string>
+    <string name="cg_grey">#7c7c7c</string>
+    <string name="cg_red">#f62929</string>
+    <string name="cg_green">#50c32c</string>
+    <string name="cg_orange">#ff6b12</string>
+    <string name="cg_blue">#358ef2</string>
+    <string name="cg_purple">#9f58ff</string>
+    <string name="cg_rose_red">#f554ff</string>
+    <string name="cg_yellow">#ffdb13</string>
+    <string name="cg_light_blue">#23dccd</string>
+    <string name="cg_cyan">#bad026</string>
+    <string name="cg_peach">#ff4e7c</string>
+    <string name="cg_dark_blue">#645ae8</string>
+    <string name="cg_light_green">#87eedd</string>
+    <string name="cg_coffee">#99796b</string>
+    <string name="cg_dark_grey">#6f87ac</string>
+    <string name="cg_dark_brown">#a25740</string>
+    <string name="cg_light_brown">#caae8c</string>
+    <string name="cg_dark_green">#9e9d5e</string>
+
+
+    <!-- 录像 -->
+    <string name="file_date">日期:        </string>
+    <string name="record_date">开始:        </string>
+    <string name="record_time_long">时长:       </string>
+    <string name="record_file_length">大小:       </string>
+    <string name="company_name">演示文字</string>
+    <string name="company_function">演示文字</string>
+    <string name="we_chat">iquklive</string>
+    <string name="selected_from_album">从相册选择</string>
+    <string name="please_wait">请稍等</string>
+    <string name="select_back">返回上一级</string>
+    <!-- 通用 -->
+    <string name="next">下一步</string>
+    <string name="complete">完&#160;成</string>
+    <string name="cancel">取&#160;消</string>
+    <string name="loading">正在加载</string>
+    <string name="submit">提&#160;交</string>
+    <string name="uploading">正在上传头像</string>
+    <string name="modify">修&#160;改</string>
+    <string name="press_again_exit">再按一次退出</string>
+    <string name="sample_publish">演示文字</string>
+
+    <!--视频处理-->
+    <string name="videoCut">裁剪</string>
+    <string name="videoCut_tip">左右滑动屏幕精细调整裁剪点</string>
+    <string name="videoConcat_tip">长按拖动视频交换合并后的播放顺序</string>
+
+    <string name="readFileError">文件不可用,请确定文件是否存在</string>
+
+    <string name="switch_pic_fragment_text1">请先到直播视频转图片中上传图片</string>
+    <string name="switch_pic_fragment_text2">点击右侧设置拍照按钮可添加图片</string>
+
+    <string name="record_tip_sure">保存</string>
+    <string name="record_tip_cancel">暂不保存</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="cg_delete_pup_cancel">暂不操作</string>
+    <string name="cg_delete_pup_sure">确定删除</string>
+    <string name="video_end_editor">采编:  </string>
+    <string name="add_video_error">MP4文件异常,部分文件未添加</string>
+    <string name="input_check_char">输入有误,请重试</string>
+    <string name="image"> Image </string>
+    <string name="video"> Video </string>
+    <string name="done"> Done </string>
+    <string name="images_tab"> Images </string>
+    <string name="videos_tab"> Videos </string>
+    <string name="max_limit_reach_error"> Max limit 10 file. </string>
+    <string name="max_limit_file"> Max limit </string>
+    <string name="please_wait_text"> Please wait</string>
+    <string name="refreshing"> Refreshing</string>
+    <string name="file_size_exceed"> The file size exceeds the maximum limit of </string>
+    <string name="selected_file_size">  Selected media size is : </string>
+    <string name="mb"> MB</string>
+    <string name="please_select_file"> Please select a file.</string>
+    <string name="file"> file. </string>
+    <string name="files"> files. </string>
+    <string name="no_media_file_available"> No media file available.</string>
+    <string name="title_activity_home_screen_media_chooser">HomeScreenMediaChooser</string>
+    <string name="on_recording">当前正在录音中</string>
+</resources>

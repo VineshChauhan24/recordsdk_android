@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_video_cover"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/item_cg_text_back2"
+    android:orientation="vertical"
+    tools:context="com.qukan.qklive.ui.videoProcess.VideoCoverActivity">
+
+    <include
+        layout="@layout/common_title"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        >
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="92dp"
+            >
+
+            <fragment
+                android:id="@+id/fm_video_seekbar"
+                android:name="com.qukan.qkrecordupload.fileCut.processFragment.SeekVideoFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:layout="@layout/fragment_seek_video"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:gravity="clip_horizontal"
+        android:orientation="vertical"
+        >
+
+        <Button
+            android:id="@+id/btn_cover"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_sure_cover"
+            android:gravity="center"
+            android:text="设置为封面"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            />
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_sure_cancel"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            />
+
+        <ImageView
+            android:id="@+id/iv_test"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            android:visibility="invisible"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>

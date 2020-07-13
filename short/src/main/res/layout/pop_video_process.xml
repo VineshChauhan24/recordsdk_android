@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/half_transparent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_margin="30dp"
+        android:background="@drawable/common_back"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:textColor="@color/short_color_22"
+            android:layout_marginTop="30dp"
+            android:textSize="16sp"
+            tools:text="这里输入提示信息" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginBottom="24dp"
+            android:layout_marginTop="4dp"
+            android:text="正在处理中"
+            android:textColor="@color/short_color_22"
+            android:textSize="16sp" />
+
+        <View style="@style/divide"/>
+
+        <TextView
+            android:id="@+id/btn_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:gravity="center"
+            android:text="取消处理"
+            android:textColor="@color/short_color_22" />
+
+        <!--<Button-->
+        <!--android:id="@+id/btn_pause"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="30dp"-->
+        <!--android:layout_marginTop="5dp"-->
+        <!--android:gravity="center"-->
+        <!--android:textColor="@color/white"-->
+        <!--android:layout_marginLeft="40dp"-->
+        <!--android:layout_marginRight="40dp"-->
+        <!--android:background="@drawable/start_record_bak"-->
+        <!--android:text="暂停"/>-->
+        <!--<Button-->
+        <!--android:id="@+id/btn_resume"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="30dp"-->
+        <!--android:gravity="center"-->
+        <!--android:layout_marginTop="5dp"-->
+        <!--android:textColor="@color/white"-->
+        <!--android:layout_marginLeft="40dp"-->
+        <!--android:layout_marginRight="40dp"-->
+        <!--android:background="@drawable/start_record_bak"-->
+        <!--android:text="恢复"/>-->
+
+    </LinearLayout>
+
+</RelativeLayout>

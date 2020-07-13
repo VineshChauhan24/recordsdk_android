@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/ll_root"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_mp3_name"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_centerHorizontal="true"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:lines="2"
+            android:padding="3dp"
+            android:textColor="@color/white"
+            android:textSize="10dp"
+            tools:text="夜的钢琴曲夜的钢琴曲夜的钢琴曲夜的夜的钢琴曲夜的钢琴曲夜的钢琴曲夜的" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_select"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:scaleType="fitXY"
+        android:visibility="gone"
+        tools:src="@mipmap/video_title_selected" />
+
+    <ImageView
+        android:id="@+id/iv_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:src="@drawable/short_ic_add_music"
+        android:layout_marginStart="8dp"
+        android:visibility="gone" />
+
+</RelativeLayout>
+
+
+
+
+

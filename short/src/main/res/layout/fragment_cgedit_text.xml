@@ -1,0 +1,18 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    tools:context="com.qukan.qkrecordupload.fileCut.CGEditChild.CGEditTextView">
+
+    <EditText
+        android:id="@+id/et_edit"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:background="#1f2229"
+        android:padding="5dp"
+        android:text="@string/hello_blank_fragment"
+        android:textColor="@color/white"
+        android:textSize="16dp" />
+
+</LinearLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="25dp"
+        android:layout_height="64dp" />
+
+
+    <RelativeLayout
+        android:id="@+id/rl_list_item"
+        android:layout_width="66dp"
+        android:layout_height="66dp">
+
+        <ImageView
+            android:id="@+id/iv_list_item"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/short_ic_add_video" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="20dp"
+        android:layout_height="64dp"
+        >
+        <ImageView
+            android:id="@+id/iv_transfer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:padding="5dp"
+            android:src="@mipmap/icon_seekbar"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_video_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        >
+        <RelativeLayout
+            android:id="@+id/rl_list_item"
+            android:layout_width="66dp"
+            android:layout_height="66dp">
+            <ImageView
+                android:id="@+id/iv_list_item"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/live_logo"
+                android:layout_centerInParent="true"/>
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_centerHorizontal="true"
+            android:background="@color/video_mask"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:layout_centerInParent="true"
+            android:textSize="13dp"
+            tools:text="16'40''"
+            />
+    </RelativeLayout>
+
+</LinearLayout>

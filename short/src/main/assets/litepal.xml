@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+    <dbname value="local_music"/>
+    <!--// 每次改了数据库字段都要在这里增加value值-->
+    <version value="1"/>
+
+    <list>
+        <mapping class="com.qukan.qkrecordupload.bean.MusicRes"/>
+    </list>
+
+</litepal>

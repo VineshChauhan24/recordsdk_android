@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.qukan.qkrecordupload">
+
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+
+    <application
+        android:allowBackup="false"
+        android:supportsRtl="true">
+
+        <meta-data
+            android:name="droidparts_dependency_provider"
+            android:value=".DependencyProvider" />
+        <meta-data
+            android:name="droidparts_log_level"
+            android:value="debug" />
+
+        <activity android:name=".Camera1Activity"/>
+        <activity
+            android:name=".fileRecord.NewCameraActivity"/>
+        <activity android:name=".fileRecord.fileRecordActivity" />
+        <activity android:name=".fileRecord.cameraConfigActivity"/>
+        <activity android:name=".fileTranscode.fileTranscodeActivity"/>
+        <activity android:name=".fileTranscode.BitSettingActivity"/>
+        <activity
+            android:name=".fileCut.processActivity.NewVideoProcessActivity"
+            android:screenOrientation="portrait" />
+
+        <activity android:name=".fileCut.musicChild.BackMusicActivity"/>
+
+    </application>
+
+</manifest>

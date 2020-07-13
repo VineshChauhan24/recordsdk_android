@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             xmlns:tools="http://schemas.android.com/tools"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             tools:context="com.qukan.qklive.ui.record.CameraActivity"
+             android:background="#000000">
+
+    <!-- 预览视图 -->
+    <com.cgfay.cainfilter.utils.AspectFrameLayout
+        android:id="@+id/layout_aspect"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="#000000">
+    </com.cgfay.cainfilter.utils.AspectFrameLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/rl_left"
+            android:layout_width="57dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <ImageView
+                android:id="@+id/iv_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/rollover"
+                android:layout_marginTop="8dp"/>
+            <View
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+            <ImageView
+                android:id="@+id/iv_fourk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/fourk"/>
+            <View
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+            <ImageView
+                android:id="@+id/iv_speed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/speed"/>
+            <View
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+            <ImageView
+                android:id="@+id/iv_shake"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/shake_close"/>
+
+            <View
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/back"
+                android:layout_marginBottom="8dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_speed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/rl_left"
+            android:orientation="vertical"
+            android:background="@drawable/speed_window_v"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_speed5"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="2X"
+                android:gravity="center"
+                android:textColor="@color/speed_gray"/>
+
+            <TextView
+                android:id="@+id/tv_speed4"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="1.5X"
+                android:gravity="center"
+                android:textColor="@color/speed_gray"
+                />
+
+            <TextView
+                android:id="@+id/tv_speed3"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="1X"
+                android:gravity="center"
+                android:textColor="@color/speed_white"
+                />
+
+
+            <TextView
+                android:id="@+id/tv_speed2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="0.66X"
+                android:gravity="center"
+                android:textColor="@color/speed_gray"
+                />
+            <TextView
+                android:id="@+id/tv_speed1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="0.5X"
+                android:gravity="center"
+                android:textColor="@color/speed_gray"
+                />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <LinearLayout
+            android:id="@+id/ll_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="200dp"
+            android:paddingLeft="80dp"
+            android:paddingRight="80dp">
+
+            <ImageView
+                android:id="@+id/iv_flash"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:src="@drawable/flash_close"/>
+
+            <ImageView
+                android:id="@+id/iv_voice"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/voice"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="right">
+
+        <com.qukan.qkrecordupload.fileRecord.view.RatioImageView
+            android:id="@+id/iv_ratio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="42dp"
+            android:background="@drawable/ratio16_9"/>
+        
+        <com.qukan.qkrecordupload.fileRecord.view.ShutterButton
+            android:id="@+id/btn_take"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center" />
+
+        <!-- 显示倒计时 -->
+        <TextView
+            android:id="@+id/tv_countdown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="#ffffff"/>
+
+        <Button
+            android:id="@+id/btn_record_delete"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:layout_toStartOf="@+id/btn_take"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/btn_record_done"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@+id/btn_take"
+            android:background="@drawable/save"
+            android:visibility="gone"/>
+
+        <com.qukan.qkrecordupload.fileRecord.view.RoundCornerImageView
+            android:id="@+id/iv_file3"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="15dp"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="15dp"
+            android:layout_alignParentRight="true"
+            android:visibility="gone"/>
+
+        <com.qukan.qkrecordupload.fileRecord.view.RoundCornerImageView
+            android:id="@+id/iv_file2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="25dp"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="15dp"
+            android:layout_alignParentRight="true"
+            android:visibility="gone"/>
+
+        <com.qukan.qkrecordupload.fileRecord.view.RoundCornerImageView
+            android:id="@+id/iv_file1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="35dp"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="15dp"
+            android:layout_alignParentRight="true"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"/>
+</FrameLayout>

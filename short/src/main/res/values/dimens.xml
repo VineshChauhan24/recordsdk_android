@@ -1,0 +1,88 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="seek_margin">20dp</dimen>
+    <dimen name="dp2">2dp</dimen>
+
+    <!-- 时间选择器：滚轮行高 -->
+    <dimen name="wheel_line_split_height">45px</dimen>
+    <dimen name="font_size_s_large">18dp</dimen>
+
+    <!-- setting -->
+    <dimen name="setting_sd_tip">17sp</dimen>
+    <dimen name="setting_cell_padd">10dp</dimen>
+    <dimen name="setting_sd_padd">20dp</dimen>
+    <dimen name="setting_two_code_exit">10dp</dimen>
+    <dimen name="av_collect_margintop">15dp</dimen>
+    <dimen name="record_name">16sp</dimen>
+    <dimen name="more_size">12sp</dimen>
+    <dimen name="message_back_width">150px</dimen>
+    <dimen name="group_img_size">70dp</dimen>
+    <dimen name="time_selecotr_text_size">13sp</dimen>
+    <dimen name="danmu_text_size">17sp</dimen>
+    <dimen name="register_width">100dp</dimen>
+    <dimen name="dot_normal_size">3dp</dimen>
+    <dimen name="dot_focused_size">5dp</dimen>
+
+    <dimen name="cg_seek_height">55dp</dimen>
+    <dimen name="seek_view_margin">15dp</dimen>
+    <dimen name="seek_video_thumb">30dp</dimen>
+
+    <dimen name="user_info_popu_padding">20dp</dimen>
+
+    <dimen name="comment_popu_width">200dp</dimen>
+    <dimen name="comment_popu_height">30dp</dimen>
+
+    <dimen name="jixing_live_share_popu_width">400dp</dimen>
+
+    <dimen name="selected_tag_margin">10dp</dimen>
+
+    <dimen name="tag_padding">6dp</dimen>
+
+    <dimen name="tag_add_btn_padding">8dp</dimen>
+
+    <dimen name="detail_quke_profile_size">38dp</dimen>
+    <dimen name="detail_tv_more_width">160px</dimen>
+
+    <dimen name="live_square_time_text_size">12sp</dimen>
+
+    <dimen name="banner_dot_size">15dp</dimen>
+
+    <dimen name="live_square_profile_size">50dp</dimen>
+
+    <dimen name="live_square_content_height">170dp</dimen>
+
+    <dimen name="index_activity_height">130dp</dimen>
+
+    <dimen name="size_avatar">50dp</dimen>
+    <dimen name="margin_chat_activity">5dp</dimen>
+
+    <dimen name="chat_popu_width">120dp</dimen>
+    <dimen name="chat_popu_height">30dp</dimen>
+
+    <dimen name="interactive_profile_size">70dp</dimen>
+
+    <!-- live -->
+    <dimen name="live_type_tip_text_size">30sp</dimen>
+    <dimen name="live_now_start_tip_text_size">23sp</dimen>
+    <dimen name="live_jixing_live_first_tip">15sp</dimen>
+    <dimen name="live_popu_height">276dp</dimen>
+    <dimen name="change_title_height">55dp</dimen>
+    <dimen name="record_popu_height">110dp</dimen>
+
+
+    <dimen name="iv_switch_pic1_width">60dp</dimen>
+    <dimen name="iv_switch_pic1_height">104dp</dimen>
+
+    <dimen name="iv_switch_pic1_width_landscape">105dp</dimen>
+    <dimen name="iv_switch_pic1_height_landscape">60dp</dimen>
+
+    <dimen name="cg_text_edit_width">55dp</dimen>
+
+    <dimen name="pop_corners">10dp</dimen>
+
+</resources>

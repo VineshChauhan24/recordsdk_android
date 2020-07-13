@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="white">#ffffff</color>
+    <color name="wgrey">#eeeeeeee</color>
+    <color name="cg_black">#000000</color>
+    <color name="cg_white">#ffffff</color>
+    <color name="cg_grey">#7c7c7c</color>
+    <color name="cg_red">#f62929</color>
+    <color name="cg_green">#50c32c</color>
+    <color name="cg_orange">#ff6b12</color>
+    <color name="cg_blue">#358ef2</color>
+    <color name="cg_purple">#9f58ff</color>
+    <color name="cg_rose_red">#f554ff</color>
+    <color name="cg_yellow">#ffdb13</color>
+    <color name="cg_light_blue">#23dccd</color>
+    <color name="cg_cyan">#bad026</color>
+    <color name="cg_peach">#ff4e7c</color>
+    <color name="cg_dark_blue">#645ae8</color>
+    <color name="cg_light_green">#87eedd</color>
+    <color name="cg_coffee">#99796b</color>
+    <color name="cg_dark_grey">#6f87ac</color>
+    <color name="cg_dark_brown">#a25740</color>
+    <color name="cg_light_brown">#caae8c</color>
+    <color name="cg_dark_green">#9e9d5e</color>
+
+    <color name="color_ab">#ababab</color>
+    <color name="color_quk">#4786FF</color>
+
+    <color name="color_black">#000000</color>
+    <color name="grey">#808080</color>
+    <color name="text_tran_back">#9f808080</color>
+    <color name="video_mask">#805d6d93</color>
+    <color name="video_range">#21242b</color>
+    <color name="video_add">#495060</color>
+    <color name="half_black">#7e000000</color>
+    <color name="blue">#2297fa</color>
+    <color name="color_light_primary">#2297fa</color>
+    <color name="NetSpeed">#ff2a2a</color>
+    <color name="NetDataSize">#5fff19</color>
+    <color name="transparent">#00000000</color>
+    <color name="common_grey">#a0a0a0</color>
+    <color name="red">#f33434</color>
+    <color name="hint_text_color">#d3d3d3</color>
+    <color name="text_small_text">#979797</color>
+    <color name="colorTab">#979797</color>
+    <color name="switch_pic_panel_back">#2c3a4f</color>
+    <color name="colorPrimary">#ff7e3a</color>
+    <color name="clip_text">#8c95ad</color>
+    <color name="clip_back">#48515f</color>
+    <color name="video_title_text">#A3ADBD</color>
+
+    <color name="quk5red">#f33434</color>
+    <color name="quk5orange">#ff7e3a</color>
+    <color name="quk5orange_record">#ff6420</color>
+    <color name="quk5blue">#f33434</color>
+    <color name="quk5grey">#a3a3a3</color>
+    <color name="quk5green">#76d83e</color>
+    <color name="quk5purple">#a473e8</color>
+    <color name="quk5black">#333333</color>
+    <color name="quk5yellow">#fffd54</color>
+    <color name="quk5lightblue">#2297fa</color>
+    <color name="seekbar_mask">#870033ff</color>
+    <color name="quk5livelistword">#929292</color>
+    <color name="divide">#dbdbdb</color>
+    <color name="text_yellow">#FFD810</color>
+
+
+    <color name="orange">#ff7e3a</color>
+    <color name="orange2">#ff5e1c</color>
+    <color name="deep_gray">#666666</color>
+    <color name="gray">#888888</color>
+    <color name="light_gray">#b3b3b3</color>
+    <color name="light_tab">#f9f9f9</color>
+    <color name="dark_orange">#c87000</color>
+    <color name="translucent_80_dark">#cc000000</color>
+    <color name="translucent">#6f000000</color>
+    <color name="light_s_gray">#cccccc</color>
+    <color name="deep_s_gray">#454545</color>
+    <color name="deep_ss_gray">#333333</color>
+    <color name="selected_back">#20000000</color>
+    <!-- 时间选择器 -->
+    <color name="split_line_gray">#B8B8B8</color>
+    <color name="picker_bar_bg">#F5F5F5</color>
+
+    <color name="fragment_transparent">#80000000</color>
+    <color name="pic_switch_checked">#545f75</color>
+    <color name="pic_switch_un_check">#00000000</color>
+    <color name="pop_text">#2297fa</color>
+    <color name="pop_cancel">#ff3300</color>
+    <color name="divide_two">#30343e</color>
+    <!-- 半透明背景 -->
+    <color name="half_transparent">#50000000</color>
+
+    <!-- tabmain -->
+    <color name="tab_main_title_bg">#ff7e3a</color>
+
+    <!-- 通用 -->
+    <color name="content_bg">#F0F0F0</color>
+    <color name="text_color">#333333</color>
+    <color name="text_view_color">#ababab</color>
+    <color name="tip_text_color">#B3B3B3</color>
+    <color name="clip_enable_false">#687590</color>
+
+    <color name="a_detail_btn_color">#FF5E26</color>
+    
+   	<color name="holo_blue">#FF33E5B5</color>
+
+    <!-- 直播 -->
+    <color name="live_type_bg">#9000</color>
+
+    <!-- 我的活动选择颜色 -->
+    <color name="selected_color">#44C1EF</color>
+    <color name="live_selected_color">#9044C1EF</color>
+    <color name="setting_share_color">#f8f8f8</color>
+    <color name="pick_picture_popu_text_color">#a7a7a7</color>
+
+    <!-- 自定义Loding_Dialog_Start -->
+    <color name="bocop_dialog_bg">#77000000</color>
+    <!-- 自定义Loding_Dialog_End -->
+
+
+    <!-- 活动分类下拉选择背景 -->
+    <color name="activity_type_tv_pressed">#A7A7A7</color>
+
+    <!-- 活动详情页未关注字体颜色 -->
+    <color name="activity_detail_attention_textcolor">#1BB4E6</color>
+
+    <!-- 他人资料tab未选中字体颜色 -->
+    <color name="others_tab_text_unselect_color">#9BE4FE</color>
+
+    <!-- 蓝色文字按钮颜色 -->
+    <color name="text_btn_color">#ff7e3a</color>
+    
+    <!-- banner 获取焦点颜色 -->
+    <color name="banner_focus_color">#33C5F3</color>
+
+    <!-- 二维码扫描 -->
+    <color name="result_view">#b0000000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="possible_result_points">#c0ffff00</color>
+    <color name="screenrate">#1BB4E6</color>
+
+    <!-- lv 头title 背景 -->
+    <color name="lv_header_bg">#F0F0F0</color>
+
+    <!-- 设置 -->
+    <color name="setting_cell_tip">#333333</color>
+    <color name="setting_cell_uuid">#666666</color>
+    <color name="record_name">#666666</color>
+    <color name="more_color">#111111</color>
+    <color name="version_update_info">#646464</color>
+
+    <color name="activity_type_item">#a6a6a6</color>
+    <color name="activity_type_item_selected">#3c3c3c</color>
+
+    <color name="activity_play_bg">#F6F6F6</color>
+
+    <color name="switch_pic_fragment_text">#9cafd0</color>
+
+    <color name="item_record_file_list_rl_selected">#60CAE1FF</color>
+    <color name="item_record_file_list_rl_un_selected">#00000000</color>
+
+    <color name="back_1">#4c566c</color>
+
+    <color name="item_cg_text">#455d94</color>
+    <color name="item_cg_text_back1">#252c32</color>
+    <color name="item_cg_text_back2">#313742</color>
+    <color name="pink">#CC6699</color>
+    <color name="brown">#330000</color>
+    <color name="green">#006600</color>
+    <color name="lime">#66FF66</color>
+    <color name="purple">#660066</color>
+    <color name="cg_back_line">#d2d2d2</color>
+
+    <color name="seekbar_selected">#87f33434</color>
+    <color name="text_point">#606060</color>
+    <color name="clip_icon">#a7bae3</color>
+    <color name="trans_dark_1">#50000000</color>
+
+    <color name="process_bg">#1d1d1d</color>
+    <color name="bg_black">#141414</color>
+
+    <color name="speed_gray">#99ffffff</color>
+    <color name="speed_white">#ffffff</color>
+    <color name="short_color_14">#141414</color>
+    <color name="short_color_27">#272727</color>
+    <color name="short_color_4786">#4786FF</color>
+    <color name="short_color_8A">#8A8A8A</color>
+    <color name="short_color_22">#222222</color>
+
+</resources>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_video_process"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/item_cg_text_back2"
+    tools:context="com.qukan.qkrecordupload.fileCut.processActivity.VideoProcessActivity">
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/video_process_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <fragment
+        android:id="@+id/fm_player"
+        android:name="com.qukan.qkrecordupload.fileCut.processFragment.PlayerFragment"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/title"
+        tools:layout="@layout/fragment_player"/>
+
+    <FrameLayout
+        android:id="@+id/fl_video_list"
+        android:layout_width="match_parent"
+        android:layout_height="92dp"
+        android:layout_below="@+id/fm_player"
+        >
+
+        <fragment
+            android:id="@+id/fm_video_list"
+            android:name="com.qukan.qkrecordupload.fileCut.processFragment.VideoListFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout="@layout/fragment_video_list"/>
+
+        <fragment
+            android:id="@+id/fm_video_seekbar"
+            android:name="com.qukan.qkrecordupload.fileCut.processFragment.SeekVideoFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout="@layout/fragment_seek_video"/>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_fragment_parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/rl_tab"
+        android:layout_below="@+id/fl_video_list"
+        android:layout_marginTop="1dp"
+        >
+
+        <fragment
+            android:id="@+id/fm_subtitle"
+            android:name="com.qukan.qkrecordupload.fileCut.processFragment.CGFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout="@layout/fragment_subtitle"/>
+
+        <fragment
+            android:id="@+id/fm_music"
+            android:name="com.qukan.qkrecordupload.fileCut.processFragment.MusicFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout="@layout/fragment_music"/>
+
+        <fragment
+            android:id="@+id/fm_crop"
+            android:name="com.qukan.qkrecordupload.fileCut.processFragment.CropFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout="@layout/fragment_crop"/>
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white">
+
+        <include
+            layout="@layout/video_process_tab"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/fm_player"
+        tools:visibility="gone">
+
+        <fragment
+            android:id="@+id/fm_subtitle_edit"
+            android:name="com.qukan.qkrecordupload.fileCut.processFragment.CGEditFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout="@layout/fragment_subtitle_edit"/>
+    </RelativeLayout>
+
+</RelativeLayout>

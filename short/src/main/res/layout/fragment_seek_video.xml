@@ -1,0 +1,46 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:background="@color/video_range"
+              android:gravity="center"
+              android:orientation="vertical"
+              tools:context="com.qukan.qkrecordupload.fileCut.processFragment.SeekVideoFragment">
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:gravity="center"
+        android:text="20:22"
+        android:textColor="@color/clip_text"
+        android:textSize="12dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="@dimen/seek_margin">
+        <ImageView
+            android:id="@+id/iv_play_control"
+            android:layout_toLeftOf="@+id/rsb_video"
+            android:layout_width="25dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="5dp"
+            android:src="@mipmap/video_play"/>
+
+        <com.qukan.qkrecordupload.fileCut.customView.SingleSeekBar
+            android:id="@+id/rsb_video"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:seekBarResId="@drawable/short_ic_progress_bar"
+            app:seekBarResId2="@drawable/short_ic_progress_bar"
+            tools:background="@color/clip_text"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>

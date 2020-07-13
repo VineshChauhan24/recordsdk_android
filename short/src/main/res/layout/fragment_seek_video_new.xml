@@ -1,0 +1,44 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_black"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+    <com.qukan.qkrecordupload.custom.TextMarkLayout
+        android:id="@+id/rl_text_mark"
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:layout_marginTop="3dp" />
+
+    <RelativeLayout
+        android:id="@+id/rl_root"
+        android:layout_width="match_parent"
+        android:layout_height="55dp">
+
+        <RelativeLayout
+            android:id="@+id/rl_draw_back"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/seek_view_margin"
+            android:layout_marginRight="@dimen/seek_view_margin"
+            android:background="@color/black" />
+
+        <RelativeLayout
+            android:id="@+id/rl_draw_rect"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/seek_view_margin"
+            android:layout_marginRight="@dimen/seek_view_margin" />
+
+        <com.qukan.qkrecordupload.custom.MovePlayControl
+            android:id="@+id/iv_play_control"
+            android:layout_width="@dimen/seek_video_thumb"
+            android:layout_height="match_parent"
+            android:src="@drawable/short_ic_progress_bar" />
+
+    </RelativeLayout>
+
+</LinearLayout>

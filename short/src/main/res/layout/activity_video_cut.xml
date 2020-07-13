@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/item_cg_text_back2"
+    android:orientation="vertical"
+    tools:context=".fileCut.processActivity.VideoCutActivity">
+
+    <include
+        layout="@layout/common_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <com.qukan.qkrecordupload.HorizontalListView
+        android:id="@+id/hlv_video_source"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_margin="10dp"
+        tools:background="@color/quk5orange">
+    </com.qukan.qkrecordupload.HorizontalListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        >
+
+        <RelativeLayout
+            android:id="@+id/rl_video_content"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:id="@+id/rl_root"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:background="@color/black"
+
+                />
+
+            <ImageView
+                android:id="@+id/iv_play_state"
+                android:layout_width="150dp"
+                android:layout_height="55dp"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/short_ic_video_play_bg"/>
+
+            <LinearLayout
+                android:id="@+id/ll_play_control"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@color/half_transparent"
+                android:gravity="center_vertical"
+                android:padding="5dp"
+                android:visibility="gone"
+                tools:visibility="visible">
+
+                <TextView
+                    android:id="@+id/tv_play_start_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="00:00:00"
+                    android:textColor="@color/white"
+                    android:textSize="15dp"/>
+
+                <SeekBar
+                    android:id="@+id/sb_play"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:progressDrawable="@drawable/player_setting_bright_progressbar"
+                    android:thumb="@drawable/seekbar_thumb"/>
+
+                <TextView
+                    android:id="@+id/tv_play_video_end"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:text="00:00:00"
+                    android:textColor="@color/white"
+                    android:textSize="15dp"/>
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:layout_below="@+id/video_view">
+
+            <LinearLayout
+                android:id="@+id/ll_rang_back"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:visibility="gone"
+                tools:visibility="visible">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:src="@mipmap/no_video"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="请选择要裁剪的片段~"
+                    android:textColor="@color/clip_text"
+                    android:textSize="13dp"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ll_rang"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/item_cg_text_back2"
+                android:orientation="vertical"
+                >
+
+                <LinearLayout
+                    android:id="@+id/ll_control"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="bottom"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp">
+
+                    <TextView
+                        android:id="@+id/tv_start_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/clip_text"
+                        android:textSize="10sp"
+                        tools:text="20:20:10.20"/>
+
+                    <TextView
+                        android:id="@+id/tv_cut_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="@color/clip_text"
+                        android:textSize="10sp"
+                        tools:text="50:20:10.20"/>
+
+                    <TextView
+                        android:id="@+id/tv_end_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|bottom"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:textColor="@color/clip_text"
+                        android:textSize="10sp"
+                        tools:text="50:20:10.20"/>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp">
+
+                    <com.qukan.qkrecordupload.fileCut.customView.RangeSeekBar
+                        android:id="@+id/range_bar"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:visibility="visible"
+                        app:seekBarResId="@mipmap/start_cut"
+                        app:seekBarResId2="@mipmap/end_cut"
+                        tools:background="@color/blue"/>
+
+                    <View
+                        android:id="@+id/vw_mask"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#3c000000"
+                        android:visibility="gone"
+                        tools:visibility="visible"
+                        />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/divide_two"
+        />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_marginBottom="5dp">
+
+        <LinearLayout
+            android:id="@+id/ll_result_back"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:src="@mipmap/no_video"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="你还没有生成视频片段哦~"
+                android:textColor="@color/clip_text"
+                android:textSize="13dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_result"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/item_cg_text_back2"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="10dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="共 "
+                    android:textColor="@color/clip_text"/>
+
+                <TextView
+                    android:id="@+id/tv_video_nub"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textColor="@color/clip_text"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" 个片段"
+                    android:textColor="@color/clip_text"/>
+
+            </LinearLayout>
+
+            <HorizontalScrollView
+                android:id="@+id/hsv_result_video"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <LinearLayout
+                    android:id="@+id/ll_result_video"
+                    android:layout_width="wrap_content"
+                    android:layout_height="66dp"
+                    android:layout_margin="10dp"
+                    android:orientation="horizontal">
+                </LinearLayout>
+            </HorizontalScrollView>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/divide_two"
+                />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/divide_two"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/clip_back"
+        >
+
+        <LinearLayout
+            android:id="@+id/ll_preview"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="false"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/iv_preview"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:src="@mipmap/clip_preview"
+                />
+
+            <TextView
+                android:id="@+id/tv_preview"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="3dp"
+                android:gravity="center_vertical"
+                android:text="预览"
+                android:textColor="@color/clip_text"
+                android:textSize="18dp"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_clip"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@color/quk5orange_record"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:src="@mipmap/clip"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="3dp"
+                android:gravity="center_vertical"
+                android:text="剪裁"
+                android:textColor="@color/white"
+                android:textSize="18dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_delete"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/iv_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:src="@mipmap/delete_clip_selected"
+                />
+
+            <TextView
+                android:id="@+id/tv_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="3dp"
+                android:gravity="center_vertical"
+                android:text="删除"
+                android:textColor="@color/clip_text"
+                android:textSize="18dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

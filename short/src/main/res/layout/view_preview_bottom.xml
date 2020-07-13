@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_bottom"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:background="@android:color/transparent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="80dp"
+        android:gravity="right">
+
+        <ImageView
+            android:id="@+id/iv_flash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="14dp"
+            android:src="@drawable/flash_close"/>
+
+        <ImageView
+            android:id="@+id/iv_voice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="14dp"
+            android:layout_marginTop="25dp"
+            android:src="@drawable/voice"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="14dp">
+
+        <com.qukan.qkrecordupload.fileRecord.view.RatioImageView
+            android:id="@+id/iv_ratio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="24dp"
+            android:background="@drawable/ratio9_16"/>
+
+        <com.qukan.qkrecordupload.fileRecord.view.ShutterButton
+            android:id="@+id/btn_take"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center" />
+
+        <!-- 显示倒计时 -->
+        <TextView
+            android:id="@+id/tv_countdown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="#ffffff"/>
+
+        <Button
+            android:id="@+id/btn_record_delete"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:layout_toStartOf="@+id/btn_take"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/btn_record_done"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:layout_toEndOf="@+id/btn_take"
+            android:background="@drawable/save"
+            android:visibility="gone"/>
+
+        <com.qukan.qkrecordupload.fileRecord.view.RoundCornerImageView
+            android:id="@+id/iv_file3"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30dp"
+            android:scaleType="centerCrop"
+            android:visibility="gone"/>
+
+        <com.qukan.qkrecordupload.fileRecord.view.RoundCornerImageView
+            android:id="@+id/iv_file2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="40dp"
+            android:scaleType="centerCrop"
+            android:visibility="gone"/>
+
+        <com.qukan.qkrecordupload.fileRecord.view.RoundCornerImageView
+            android:id="@+id/iv_file1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="50dp"
+            android:scaleType="centerCrop"
+            android:visibility="gone"/>
+    </RelativeLayout>
+</LinearLayout>

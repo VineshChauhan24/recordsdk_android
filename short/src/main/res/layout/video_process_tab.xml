@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="55dp"
+              android:background="#4c566c"
+              android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/ll_crop"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="5dp"
+        >
+
+        <ImageView
+            android:id="@+id/iv_tab_crop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@mipmap/tab_crop_out"/>
+
+        <TextView
+            android:id="@+id/tv_tab_crop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="裁剪"
+            android:textColor="@color/clip_text"
+            android:textSize="13dp"/>
+    </LinearLayout>
+
+    <View
+        style="@style/divide_vertical2"/>
+
+    <LinearLayout
+        android:id="@+id/ll_title"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="5dp"
+        >
+
+        <ImageView
+            android:id="@+id/iv_tab_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@mipmap/tab_cg_out"/>
+
+        <TextView
+            android:id="@+id/tv_tab_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="字幕模板"
+            android:textColor="@color/clip_text"
+            android:textSize="13dp"/>
+    </LinearLayout>
+    <View
+        style="@style/divide_vertical2"/>
+    <LinearLayout
+        android:id="@+id/ll_music"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="5dp"
+        >
+
+        <ImageView
+            android:id="@+id/iv_tab_music"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@mipmap/tab_music_out"/>
+
+        <TextView
+            android:id="@+id/tv_tab_music"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="音乐"
+            android:textColor="@color/clip_text"
+            android:textSize="13dp"/>
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,73 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_popup"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/half_transparent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="选择清晰度"
+            android:textStyle="bold"
+            android:textColor="@color/short_color_22"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_divide"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#eeeeee" />
+
+        <TextView
+            android:id="@+id/tv_button1"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/pop_selected_back"
+            android:paddingStart="12dp"
+            android:gravity="center_vertical"
+            android:text="超清"
+            android:textColor="@color/short_color_22"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#eeeeee" />
+
+        <TextView
+            android:id="@+id/tv_button2"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:paddingStart="12dp"
+            android:gravity="center_vertical"
+            android:background="@drawable/pop_selected_back"
+            android:text="高清"
+            android:textColor="@color/short_color_22"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#eeeeee" />
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/pop_selected_back"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="@color/short_color_22"
+            android:textSize="18sp" />
+    </LinearLayout>
+</RelativeLayout>

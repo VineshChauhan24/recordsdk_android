@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/half_transparent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_margin="50dp"
+        android:background="@drawable/common_back"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginBottom="24dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            tools:text="这里输入提示信息" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+            android:background="#BBC3CE" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_cancel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/pop_selected_left_back"
+                android:gravity="center"
+                android:padding="13dp"
+                android:text="取消"
+                android:textColor="#9CA1A7" />
+
+            <TextView
+                android:id="@+id/tv_divide"
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="#BBC3CE" />
+
+            <TextView
+                android:id="@+id/tv_ok"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/pop_selected_right_back"
+                android:gravity="center"
+                android:padding="13dp"
+                android:text="确认"
+                android:textColor="@color/short_color_22" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

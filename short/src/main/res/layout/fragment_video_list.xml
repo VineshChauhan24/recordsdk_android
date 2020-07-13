@@ -1,0 +1,22 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context="com.qukan.qkrecordupload.fileCut.processFragment.VideoListFragment">
+
+    <HorizontalScrollView
+        android:id="@+id/hsv_video"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/video_range"
+        >
+        <LinearLayout
+            android:id="@+id/ll_video_list"
+            android:layout_width="wrap_content"
+            android:layout_height="66dp"
+            android:layout_margin="5dp"
+            android:orientation="horizontal">
+        </LinearLayout>
+    </HorizontalScrollView>
+
+</LinearLayout>
